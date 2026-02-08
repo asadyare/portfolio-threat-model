@@ -27,77 +27,84 @@ You use this repository to understand security risks before code reaches product
 
 ## Trust Boundaries
 
-Developer workstation to GitHub
-GitHub to CI runners
-CI runners to container registry
-Registry to Kubernetes cluster
-Ingress traffic from Cloudflare to cluster services
+- Developer workstation to GitHub
+- GitHub to CI runners
+- CI runners to container registry
+- Registry to Kubernetes cluster
+- Ingress traffic from Cloudflare to cluster services
 
-Threat Modelling Approach
+## Threat Modelling Approach
+
 STRIDE methodology applied per component
 Attack surface identification for each boundary
 Likelihood and impact scoring using low, medium, high
 Mitigation tracking through CI and infrastructure controls
 
-Key Threat Categories
+### Key Threat Categories
 
-Spoofing
-Unauthorised access to GitHub repositories
-Compromised CI credentials
+- Spoofing
+- Unauthorised access to GitHub repositories
+- Compromised CI credentials
 
-Tampering
-Malicious code injection through pull requests
-Container image modification in registry
+- Tampering
+- Malicious code injection through pull requests
+- Container image modification in registry
 
-Repudiation
-Lack of audit logs for pipeline actions
-Untracked configuration changes
+- Repudiation
+- Lack of audit logs for pipeline actions
+- Untracked configuration changes
 
-Information Disclosure
-Leaked secrets in source code
-Exposed Kubernetes services
+- Information Disclosure
+- Leaked secrets in source code
+- Exposed Kubernetes services
 
-Denial of Service
-Pipeline abuse through excessive job execution
-Ingress flooding against cluster services
+- Denial of Service
+- Pipeline abuse through excessive job execution
+- Ingress flooding against cluster services
 
-Elevation of Privilege
-Over permissive GitHub Actions permissions
-Misconfigured Kubernetes RBAC
+- Elevation of Privilege
+- Over permissive GitHub Actions permissions
+- Misconfigured Kubernetes RBAC
 
-Mitigations Mapped to CI Pipelines
+### Mitigations Mapped to CI Pipelines
 
-Source Control
-Branch protection rules
-Required status checks
-Mandatory code reviews
+- Source Control
+- Branch protection rules
+- Required status checks
+- Mandatory code reviews
 
-CI Security
-Reusable security workflows
-Secret scanning on pull requests
-SAST and dependency scanning
-Container image scanning before push
+### CI Security
 
-Supply Chain
-Pinned action versions
-Minimal permissions for workflows
-SBOM generation and storage
+- Reusable security workflows
+- Secret scanning on pull requests
+- SAST and dependency scanning
+- Container image scanning before push
 
-Kubernetes
-Namespace isolation
-RBAC with least privilege
-Network policies for service access
-Admission controls for image validation
+### Supply Chain
 
-Edge and Exposure
-HTTPS enforced by Cloudflare
-TLS termination and certificate management
-Rate limiting at the edge
+- Pinned action versions
+- Minimal permissions for workflows
+- SBOM generation and storage
 
-Risk Tracking
+### Kubernetes
+
+- Namespace isolation
+- RBAC with least privilege
+- Network policies for service access
+- Admission controls for image validation
+
+### Edge and Exposure
+
+- HTTPS enforced by Cloudflare
+- TLS termination and certificate management
+- Rate limiting at the edge
+
+### Risk Tracking
+
 Each threat includes a documented mitigation and validation step. Validation occurs through CI job results, policy enforcement, or runtime configuration checks.
 
-- Directory Structure
+## Directory Structure
+
 - frontend-threats
 - kubernetes-threats
 - ci-pipeline-threats
@@ -106,14 +113,15 @@ Each threat includes a documented mitigation and validation step. Validation occ
 
 ## Related Repositories
 
-Frontend Application
+   Frontend Application
 
 1. [Fronteend Application](https://github.com/asadyare/portfolio-frontend)
 
-Shared CI and Security Workflows
+   Shared CI and Security Workflows
+
 2. [CI CD and security pipelines](https://github.com/asadyare/portfolio-ci-cd-security)
 
-Kubernetes Security Projects
+   Kubernetes Security Projects
 3. [Kubernetes Deployment and security](https://github.com/asadyare/portfolio-k8s-microservices-deployment)
 
 ## Central Portfolio Reference
