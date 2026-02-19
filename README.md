@@ -123,16 +123,21 @@ Each threat includes a documented mitigation and validation step. Validation occ
 
 ## Related Repositories
 
-   Frontend Application
+Frontend Application
 
-1. [Fronteend Application](https://github.com/asadyare/portfolio-frontend)
+1.[Fronteend Application](https://github.com/asadyare/portfolio-frontend)
 
-   Shared CI and Security Workflows
+Shared CI and Security Workflows
 
-2. [CI CD and security pipelines](https://github.com/asadyare/portfolio-ci-cd-security)
+2.[CI CD and security pipelines](https://github.com/asadyare/portfolio-ci-cd-security)
 
-   Kubernetes Security Projects
-3. [Kubernetes Deployment and security](https://github.com/asadyare/portfolio-k8s-microservices-deployment)
+Kubernetes Security Projects
+
+3.[Kubernetes Deployment and security](https://github.com/asadyare/portfolio-k8s-microservices-deployment)
+
+Daily Security Scan
+
+4.[Daily security automation](https://github.com/asadyare/portfolio-daily-security)
 
 ## Central Portfolio Reference
 
