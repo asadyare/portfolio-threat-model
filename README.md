@@ -1,5 +1,11 @@
 # Threat modeling for frontend, CI, and Kubernetes
 
+[![CI Security](https://github.com/asadyare/portfolio-ci-cd-security/actions/workflows/ci-security.yml/badge.svg)](https://github.com/asadyare/portfolio-ci-cd-security/actions/workflows/ci-security.yml)
+
+[![Daily Security](https://github.com/asadyare/portfolio-daily-security/actions/workflows/security-alerting-and-reporting.yml/badge.svg)](https://github.com/asadyare/portfolio-daily-security/actions/workflows/security-alerting-and-reporting.yml)
+
+[![Runtime Security Falco](https://img.shields.io/badge/Runtime%20Security-Falco%20Enabled-brightgreen)](https://falco.org/)
+
 ## Overview
 
 This repository documents threat models and risk analysis for the portfolio platform and Kubernetes workloads. The focus stays on identifying assets, defining trust boundaries, analysing threats, and mapping mitigations directly to CI pipelines and deployment controls.
@@ -15,6 +21,10 @@ You use this repository to understand security risks before code reaches product
 - Kubernetes clusters and workloads
 - Cloudflare edge and DNS layer
 - Secrets, credentials, and supply chain inputs
+
+## diagram Architecture
+
+[![Threat Modeling Architecture](diagrams/architecture.png)](diagrams/architecture.png)
 
 ## Assets
 
